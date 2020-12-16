@@ -21,13 +21,13 @@ void main()
     {
 	if (arr1[i]%2 == 0)
 	{
-	   arr2[i] = arr1[j];
-	   i++;
+	   arr2[j] = arr1[i];
+	   j++;
 	}
 	else
 	{
-	   arr3[i] = arr1[k];
-	   i++;
+	   arr3[k] = arr1[i];
+	   k++;
 	}
     }
 

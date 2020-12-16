@@ -1,13 +1,13 @@
 #include <stdio.h>
 int isprime(int n)
 {
-	int i,f,c;
-	for(i=0;i<n;i++)
+	int i,f,c=0;
+	for(i=2;i<n;i++)
 	{
-		if(n%c==0)
-		c++;
+		if(n%i==0)
+		c++; 
 	}
-	if(c==2)
+	if(c==0)
 	{
 		f=1;
 	}
@@ -15,15 +15,20 @@ int isprime(int n)
 	{
 		f=0;
 	}
+	return f;
 }
 int main()
 {
 	int num;
 	printf("Enter a number:");
-	scanf("%d",num);
-	int r=isprime(num);
+	scanf("%d",&num);
+	if(num==1)
+	 printf("1 is neither prime nor composite");
+	else 
+	{int r=isprime(num);
 	if(r==1)
 	printf("%d is prime",num);
 	else
 	printf("%d is not prime",num);
+   }
 }

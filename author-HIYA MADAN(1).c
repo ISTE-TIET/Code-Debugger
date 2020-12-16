@@ -11,14 +11,14 @@ void main()
 {
 char str[20];
 char *ptr=str,*temp;
-int i=0,j;
+int i=0,j,l;
 scanf("%[^\n]",str);
 while(*ptr)
 {
 i++;
 ptr++;
 }
-for(j=0;j
+for(j=0;j<i;j++)
 {
             if(*ptr==' ')
             {

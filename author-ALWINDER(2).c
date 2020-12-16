@@ -1,8 +1,9 @@
 #include<stdio.h>
 int main(){
  char *ptr = "void pointer";
- void *vptr;
+ int *vptr;
  vptr = &ptr;
- printf("%s" , **&(char **)vptr);
+ printf("%s" , **&vptr);
  return 0;
 }
+
