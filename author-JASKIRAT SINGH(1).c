@@ -1,6 +1,6 @@
 #include<stdio.h>
-
-void transpose(int arr[][],int n)
+int n;
+void transpose(int arr[n][n],int n)
 {
 	int tra[n][n],i,j;
 	for(i=0;i<n;i++)
@@ -21,7 +21,7 @@ void transpose(int arr[][],int n)
 }
 int main()
 {
-	int n,i,j;
+	int i,j;
 	printf("Enter the order of matrix\n");
 	scanf("%d",&n);
 	int arr[n][n];
