@@ -2,10 +2,12 @@
 
 int gcd(int a,int b)
 {
-	if(b < 0)
-		return a;
+	if(b > a)
+		return gcd(a,b-a);
+	else if(a>b)
+		return gcd(a-b,b);
 	else 
-		return gcd(b,a%b);
+	    return a;
 }
 
 int main()
