@@ -2,6 +2,7 @@
  is equal to that number, the number is called Armstrong number. For example 153.
 Sum of its divisor is 13 + 53;+ 33; = 1+125+27 = 153*/
 #include <stdio.h>
+#include<math.h>
 
 void main(){
     int num,r,sum,temp;
@@ -19,11 +20,11 @@ void main(){
          sum = 0;
 
          while(temp!=0){
-             r=temp / 10;
-             temp%=10;
+             r=temp % 10;
+             temp/=10;
              sum=sum + pow(r,3);
          }
-         if(sum=num)
+         if(sum==num)
              printf("%d ",num);
     }
 printf("\n");

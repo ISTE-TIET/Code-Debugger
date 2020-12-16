@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void transpose(int arr[][],int n)
+void transpose(int arr[][10],int n)
 {
 	int tra[n][n],i,j;
 	for(i=0;i<n;i++)

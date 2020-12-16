@@ -2,12 +2,12 @@
 #include <stdio.h>
 int Main()
 {
-    int x,y;
+    int x,y,i;
     Printf("enter the no. to be divided");
     scanf("%d",&x);
-    for(int i=1;i<=5;i+=1);
+    for(i=1;i<=5;i+=1);
     {
-        x+i=y;
+        y=x+i;
         printf("\n the sum of given number with %d is %d",i,y);
     }
     return 0;
