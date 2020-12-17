@@ -5,16 +5,15 @@ int main()
    printf("Enter an integer: ");
    scanf("%d", &num);
    temp=num;
-   while(temp!=0)
+   while(num!=0)
    {
-      remainder=temp%10;
+      remainder=num%10;
       reverse_num=reverse_num*10+remainder;
-      temp/=10;
+      num/=10;
   }
-   if(reverse_num==num) 
-      printf("%d is a palindrome number",num);
+   if(temp==reverse_num) 
+      printf("%d is a palindrome number",temp);
    else
-      print("%d is not a palindrome number",num);
-      
+      printf("%d is not a palindrome number",temp);  
    return 0;
 }

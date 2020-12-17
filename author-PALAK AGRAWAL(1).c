@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int arr={23,45,132,90,345,1,45,8};
+	int arr[]={23,45,132,90,345,1,45,8};
 	int sum=sum_arr(arr,8);
 	printf("Sum=%d",sum);	
 	return 0;

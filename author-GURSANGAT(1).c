@@ -1,10 +1,10 @@
 # include <stdio.h>
 int main()
 {
-   int i = 0;
+   int i;
    for (i=0; i<20; i++)
    {
-     switch(i);
+     switch(i)
      {
        case 0:
          i += 5;
@@ -19,7 +19,7 @@ int main()
          i += 4;
          break;
      }
-     printf("%d  "; i);
+     printf("%d  ",i);
    }
    return 0;
 }

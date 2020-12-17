@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 void transpose(int arr[][10],int n)
 {
 	int tra[n][n],i,j;
@@ -17,23 +16,6 @@ void transpose(int arr[][10],int n)
 			arr[i][j]=tra[i][j];
 		}
 	}
-	
-}
-int main()
-{
-	int n,i,j;
-	printf("Enter the order of matrix\n");
-	scanf("%d",&n);
-	int arr[n][n];
-	printf("Enter the elements");
-	for(i=0;i<n;i++)
-	{
-		for(j=0;j<n;j++)
-		{
-			scanf("%d",&arr[i][j]);
-		}
-	}
-	transpose(arr,n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
@@ -42,4 +24,22 @@ int main()
 		}
 		printf("\n");
 	}
+	
+}
+int main()
+{
+	int k,i,j;
+	printf("Enter the order of matrix\n");
+	scanf("%d",&k);
+	int arr[k][k];
+	printf("Enter the elements");
+	for(i=0;i<k;i++)
+	{
+		for(j=0;j<k;j++)
+		{
+			scanf("%d",&arr[i][j]);
+		}
+	}
+	transpose(arr,k);
+	return 0;
 }

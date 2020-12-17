@@ -21,7 +21,7 @@ int main()
 {
 	int num;
 	printf("Enter a number:");
-	scanf("%d",num);
+	scanf("%d",&num);
 	int r=isprime(num);
 	if(r==0)
 	printf("%d is prime",num);

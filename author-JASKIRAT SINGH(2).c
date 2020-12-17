@@ -6,6 +6,6 @@ int main()
 	{
 		printf("division");
 	}
-	printf("%d",5/i);
+	printf("%d",i/5);
 	return 0;
 }

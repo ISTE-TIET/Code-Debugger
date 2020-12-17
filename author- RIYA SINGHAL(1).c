@@ -4,7 +4,7 @@ int main()
 {
     int x,i;
     printf("enter the no. to be divided");
-    scanf("%d",x);
+    scanf("%d",&x);
     for(i=0;i<=5;i+=1)
     {
         int y=x/i;

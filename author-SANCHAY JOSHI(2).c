@@ -2,8 +2,8 @@
 
 int main()
 {
-	long var = 2147483648;
+	long long var = 2147483648;
 	printf("Sanchay\n\n");
-	printf("Value of var = %ld\n",var);
+	printf("Value of var = %lld\n",var);
 	return 0;
 }
