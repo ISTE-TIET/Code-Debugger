@@ -7,13 +7,13 @@ void main()
     int i,j=0,k=0,n;
 
 
-       printf("Input the number of elements to be stored in the array :");
+       printf(" Input the number of elements to be stored in the array : ");
        scanf("%d",&n);
 
-       printf("Input %d elements in the array :\n",n);
+       printf(" Input %d elements in the array :\n",n);
        for(i=0;i<n;i++)
             {
-	      printf("element - %d : ",i);
+	      printf(" element - %d : ",i);
 	      scanf("%d",&arr1[i]);
 	    }
 
@@ -21,26 +21,26 @@ void main()
     {
 	if (arr1[i]%2 == 0)
 	{
-	   arr2[i] = arr1[j];
-	   i++;
+	   arr2[j] = arr1[i];
+	   j++;
 	}
 	else
 	{
-	   arr3[i] = arr1[k];
-	   i++;
+	   arr3[k] = arr1[i];
+	   k++;
 	}
     }
 
-    printf("\nThe Even elements are : \n");
+    printf("\n The Even elements are : \n");
     for(i=0;i<j;i++)
     {
-	printf("%d ",arr2[i]);
+	printf(" %d ",arr2[i]);
     }
 
-    printf("\nThe Odd elements are :\n");
+    printf("\n The Odd elements are :\n");
     for(i=0;i<k;i++)
     {
-	printf("%d ", arr3[i]);
+	printf(" %d ", arr3[i]);
     }
     printf("\n\n");
  }
