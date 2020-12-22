@@ -16,3 +16,5 @@ void main()
     else
         printf("\nThe string is a palindrome");
 }
+
+//Working fine ,no segmentation fault

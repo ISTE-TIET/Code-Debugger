@@ -4,7 +4,7 @@ int main()
    int i = 0;
    for (i=0; i<20; i++)
    {
-     switch(i);
+     switch(i)
      {
        case 0:
          i += 5;
@@ -16,7 +16,7 @@ int main()
          i += 4;
          break;
      }
-     printf("%c  "; i);
+     printf("%d  ", i);
    }
    return 0;
 }
