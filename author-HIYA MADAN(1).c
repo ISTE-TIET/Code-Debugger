@@ -1,8 +1,8 @@
 /*A string is entered (For example: My name is jessie.)
 Here is C program to get its reverse in a column as output i.e.:
 jessie
-is 
-name 
+is
+name
 My
 Debug the following program to get the desired output.
 */
@@ -18,14 +18,14 @@ while(*ptr)
 i++;
 ptr++;
 }
-for(j=0;j
+for(j=0;j < i; j++)
 {
             if(*ptr==' ')
             {
                   temp=ptr;
                   ptr--;
                   temp++;
-                  while((*temp!=' ')&&(*temp!='\0')) 
+                  while((*temp!=' ')&&(*temp!='\0'))
                   {
                        printf("%c",*temp);
                         temp++;
@@ -37,7 +37,7 @@ for(j=0;j
                   ptr--;
             }
 }
-while(*ptr!=' ') 
+while(*ptr!=' ')
 {
 printf("%c",*ptr);
 ptr++;
