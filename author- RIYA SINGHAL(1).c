@@ -9,6 +9,6 @@ int main()
     {
         int y=x/i;
         printf("\n the quotient after dividing '%d' by '%d' is %d",x,i,y);
-    }
+
     return 0;
 }
