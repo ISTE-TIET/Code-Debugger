@@ -19,11 +19,11 @@ void main(){
          sum = 0;
 
          while(temp!=0){
-             r=temp / 10;
-             temp%=10;
+             r=temp%10;
              sum=sum + pow(r,3);
+             temp/=10;
          }
-         if(sum=num)
+         if(sum==num)
              printf("%d ",num);
     }
 printf("\n");
